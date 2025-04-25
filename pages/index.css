@@ -217,7 +217,106 @@
 .recipes__video-caption {
   margin-bottom: 2px;
 }
-/* .reservation {} */
+
+.reservation {
+  margin: 0;
+  padding: 100px 0 120px 0;
+  box-sizing: border-box;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: inherit;
+  background-size: cover;
+  background-color: #d9e7ff;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  /* all styles other than margins */
+}
+
+.reservation__title {
+  margin-bottom: 80px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000;
+}
+
+.reservation__form {
+  /* margins */
+  /* padding: 0; */
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__label {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.form__input {
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #838383;
+  border-style: solid;
+  max-width: 385px;
+  height: 60px;
+  margin-bottom: 32px;
+  color: #000;
+}
+
+.form__input::placeholder {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* margin: 20px 15px 20px 15px; */
+  padding-left: 15px;
+}
+
+.form__button {
+  width: 385px;
+  height: 60px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  margin: 20px auto 20px auto;
+  color: #fff;
+  background-color: #1878dc;
+  transition: background-color 0.75s linear 0.2s;
+}
+
+.form__button:hover {
+  /* background-color: #3f96f3; */
+  background-color: #000;
+}
+
+.form__input_checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/* .form__fieldset .form__input_checkbox {
+  flex-direction: row-reverse;
+} */
 
 /* .menu {} */
 
