@@ -124,76 +124,68 @@
         <section class="reservation" id="reservation">
           <!--form-container-->
           <div class="form">
-            <!-- reservation title-->
             <h2 class="reservation__title">Book a table</h2>
-            <!--form-->
             <form class="reservation__form form">
-              <!--Name-->
               <fieldset class="form__fieldset">
-                <label for="Name-surname" class="form__label">Name</label>
-                <input
-                  type="text"
-                  class="form__input"
-                  id="Name-surname"
-                  name="nameSurname"
-                  placeholder="Name surname"
-                  required
-                />
-              </fieldset>
-              <!--Number of guests-->
-              <fieldset class="form__fieldset">
-                <label for="Number-guests" class="form__label"
-                  >Number of guests</label
+                <label for="Name-surname" class="form__label">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="Name-surname"
+                    name="nameSurname"
+                    placeholder="Name surname"
+                    required
+                  />
+                  Name</label
                 >
-                <input
-                  type="number"
-                  class="form__input"
-                  id="Number-guests"
-                  name="numberGuests"
-                  placeholder="1-8"
-                  required
-                />
+                <label for="Number-guests" class="form__label">
+                  <input
+                    type="number"
+                    class="form__input"
+                    id="Number-guests"
+                    name="numberGuests"
+                    placeholder="1-8"
+                    required
+                  />
+                  Number of guests</label
+                >
               </fieldset>
-              <!--Date & time-->
               <fieldset class="form__fieldset">
-                <label for="Date-time" class="form__label">Date & time</label>
-                <input
-                  type="datetime-local"
-                  class="form__input"
-                  id="Date-time"
-                  name="dateTime"
-                  required
-                />
-              </fieldset>
-              <!--Your email-->
-              <fieldset class="form__fieldset">
-                <label for="Your-email" class="form__label">Your email</label>
-                <input
-                  type="email"
-                  class="form__input"
-                  id="Your-email"
-                  name="yourEmail"
-                  placeholder="email@email.com"
-                  required
-                />
-              </fieldset>
-              <!--Book a table (button)-->
-              <fieldset class="form__fieldset">
+                <label for="Date-time" class="form__label">
+                  <input
+                    type="datetime-local"
+                    class="form__input"
+                    id="Date-time"
+                    name="dateTime"
+                    required
+                  />
+                  Date & time</label
+                >
+                <label for="Your-email" class="form__label">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="Your-email"
+                    name="yourEmail"
+                    placeholder="email@email.com"
+                    required
+                  />
+                  Your email</label
+                >
                 <button type="submit" class="form__button">Book a table</button>
-              </fieldset>
-              <!--I agree with terms of use (checkbox)-->
-              <fieldset class="form__fieldset form__label_type_checkbox">
-                <label for="terms-of-use" class="form__label"
-                  >I agree with terms of use</label
+                <label
+                  for="terms-of-use"
+                  class="form__label form__label_type_checkbox"
                 >
-                <input
-                  type="checkbox"
-                  name="I agree with terms of use"
-                  id="terms-of-use"
-                  value="terms"
-                  class="form__checkbox"
-                />
-                <!-- class="form__input form__input_checkbox" -->
+                  <input
+                    type="checkbox"
+                    name="I agree with terms of use"
+                    id="terms-of-use"
+                    value="terms"
+                    class="form__checkbox"
+                  />
+                  I agree with terms of use</label
+                >
               </fieldset>
             </form>
           </div>
@@ -201,16 +193,16 @@
         <!-- Menu section -->
         <section class="menu" id="menu">
           <h2 class="menu__title">Menu</h2>
-          <h3 class="menu__subtitle">
+          <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
-          </h3>
-          <div class="cards">
+          </p>
+          <div class="menu__cards">
             <!-- Filter card -->
             <div class="card">
-              Filter card
-              <ul class="card__title">
+              <ul class="card__list">
                 <!-- Filter card title -->
+                <h3 class="card__title">Filter</h3>
                 <li class="card__list-item">
                   Regular (12 oz)
                   <span class="card__list-divider"></span>
@@ -240,9 +232,9 @@
             </div>
             <!-- Espresso card -->
             <div class="card">
-              Espresso card
-              <ul class="card__title">
+              <ul class="card__list">
                 <!-- Espresso card title -->
+                <h3 class="card__title">Espresso</h3>
                 <li class="card__list-item">
                   Macchiato
                   <span class="card__list-divider"></span>
@@ -267,9 +259,9 @@
             </div>
             <!-- Baked Goods card -->
             <div class="card">
-              Baked Goods card
-              <ul class="card__title">
+              <ul class="card__list">
                 <!-- Baked Goods card title -->
+                <h3 class="card__title">Baked Goods</h3>
                 <li class="card__list-item">
                   Almond Croissant
                   <span class="card__list-divider"></span>
@@ -340,24 +332,28 @@
             alt="Coffee Shop logo"
             class="footer__logo"
           />
-          <div class="footer__social-heading">
-            Social media
+          <div class="footer__column">
+            <h3 class="footer__social-heading">Social media</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <img
-                  src="images/facebook_white.svg"
-                  alt="Facebook icon"
-                  class="footer__social-icon"
-                />
-                <a href="" class="footer__social-link">Facebook</a>
+                <a href="" class="footer__social-link">
+                  <img
+                    src="images/facebook_white.svg"
+                    alt="Facebook icon"
+                    class="footer__social-icon"
+                  />
+                  Facebook</a
+                >
               </li>
               <li class="footer__list-item">
-                <img
-                  src="images/instagram_white.svg"
-                  alt="Instagram icon"
-                  class="footer__social-icon"
-                />
-                <a href="" class="footer__social-link">Instagram</a>
+                <a href="" class="footer__social-link">
+                  <img
+                    src="images/instagram_white.svg"
+                    alt="Instagram icon"
+                    class="footer__social-icon"
+                  />
+                  Instagram</a
+                >
               </li>
             </ul>
           </div>
