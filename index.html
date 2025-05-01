@@ -9,7 +9,6 @@
     />
     <meta name="author" content="Simeon Pennisi" />
     <meta name="keywords" content="Coffee Shop" />
-    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- font settings -->
@@ -37,7 +36,7 @@
           <!-- header image -->
           <img
             src="./images/logo_coffeeshop_dark.svg"
-            alt="Coffee Shop Logo"
+            alt="Triple Peaks Coffee Shop Logo dark"
             class="nav__logo"
           />
           <!-- header navigation links -->
@@ -71,12 +70,10 @@
           class="header__image"
         />
         <div class="header__footer">
-          <ul class="header__footer header__footer_hours">
-            <li>Hours:</li>
-            <li>Monday - Friday (10:00 - 19:00)</li>
-            <li>Saturday - Sunday (11:00 - 18:00)</li>
-          </ul>
-          <p class="header__footer header__footer_address">
+          <p class="header__paragraph">Hours</p>
+          <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+          <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
@@ -86,12 +83,13 @@
         <section class="recipes" id="recipes">
           <div class="recipes__content">
             <h2 class="recipes__title">Recipes</h2>
-            <h3 class="recipes__subtitle">
-              Check out some recipes we've collected for your home-brewing
-              convenience:
-            </h3>
-            <div class="recipes__videos">
-              <div class="recipes__iframe">
+            <div class="recipes__subtitle">
+              <p>Check out some recipes we've collected for</p>
+              <p>your home-brewing convenience:</p>
+            </div>
+            <!-- recipes section -->
+            <ul class="recipes__videos">
+              <li class="recipes__iframe">
                 <iframe
                   class="recipes__iframe recipes__iframe_Aeropress-recipe"
                   src="https://www.youtube.com/embed/j6VlT_jUVPc?si=zpEKtbIb4CkBAXqa"
@@ -102,8 +100,10 @@
                 >
                 </iframe>
                 <div class="recipes__video-caption">
-                  Aeropress recipe ~5 min
+                  <span>Aeropress recipe</span> <span>~5 min</span>
                 </div>
+              </li>
+              <li class="recipes__iframe">
                 <iframe
                   class="recipes__iframe recipes__iframe_French-press-recipe"
                   src="https://www.youtube.com/embed/st571DYYTR8?si=0BtUpkpGY_WWePdF"
@@ -114,10 +114,10 @@
                 >
                 </iframe>
                 <div class="recipes__video-caption">
-                  French press recipe ~15 min
+                  <span>French press recipe</span> <span>~15 min</span>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </section>
         <!--reservation section-->
@@ -182,7 +182,7 @@
                 <button type="submit" class="form__button">Book a table</button>
               </fieldset>
               <!--I agree with terms of use (checkbox)-->
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__label_type_checkbox">
                 <label for="terms-of-use" class="form__label"
                   >I agree with terms of use</label
                 >
@@ -191,8 +191,9 @@
                   name="I agree with terms of use"
                   id="terms-of-use"
                   value="terms"
-                  class="form__input form__input_checkbox"
+                  class="form__checkbox"
                 />
+                <!-- class="form__input form__input_checkbox" -->
               </fieldset>
             </form>
           </div>
@@ -326,11 +327,12 @@
             </p>
           </div>
           <div class="about__circle"></div>
-          <div class="about__circle_animation_blurred">
-            <!-- animation -->
+          <div class="about__circle about__circle_animation_blurred">
+            <!-- circle animation -->
           </div>
         </section>
       </main>
+
       <footer class="footer">
         <div class="footer__content">
           <img
