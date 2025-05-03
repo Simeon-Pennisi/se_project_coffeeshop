@@ -6,17 +6,5 @@
 @import url(../blocks/reservation.css);
 @import url(../blocks/form.css);
 @import url(../blocks/menu.css);
-@import url(../blocks/cards.css);
 @import url(../blocks/about.css);
 @import url(../blocks/footer.css);
-
-.content {
-}
-
-/* list of colors
-#fff
-#000
-#3f96f3
-#838383
-#6f6f6f
-#0a2750 */
