@@ -13,7 +13,7 @@
 }
 
 .header__title {
-  width: 729px;
+  max-width: 729px;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-size: 60px;
@@ -34,7 +34,7 @@
 }
 
 .header__description {
-  width: 683px;
+  max-width: 683px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
@@ -53,19 +53,17 @@
 }
 
 .header__footer {
-  width: 1600px;
   margin-top: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: end;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-  height: 60px;
 }
 
 .header__paragraph {
